@@ -1,0 +1,16 @@
+Create a single HTML file Personal CEO Dashboard.
+
+Include:
+
+- Daily priorities
+- Goals tracker
+- Habit tracker
+- Revenue tracker
+- Notes section
+- Calendar view
+- Progress charts
+- Dark mode
+- Local storage
+
+Everything must be inside one HTML file.
+Make it look like a premium SaaS product.

@@ -1,0 +1,81 @@
+Create an interactive sales dashboard using React with the following specifications:
+
+**Objective:**
+Build a professional, responsive dashboard that visualizes 3 years of sales data with key business metrics and actionable insights.
+
+**Data Requirements:**
+- Accept Excel sales data with the following columns: SalesDate, Region, Cust_Type, Customer, Buz_Segt, Category, Model, Model_Color, ListPrice, OrderQty, Gross Sales Amt
+- Parse and process the data to enable all visualizations
+- Validate data integrity and handle missing values gracefully
+
+**Dashboard Components - Must Include:**
+
+1. **Key Performance Indicators (KPIs) Section:**
+   - Total Revenue (3-year sum)
+   - Average Monthly Sales
+   - Total Orders/Transactions
+   - Customer Segments Count
+   - Display in a prominent card layout with clear typography and visual hierarchy
+
+2. **Pie Chart - Customer Type Distribution:**
+   - Show breakdown of sales by customer type (e.g., B2B, B2C, Retail, etc.)
+   - Include percentage labels
+   - Use distinct colors for easy differentiation
+   - Add legend with counts
+
+3. **Bar Chart - Monthly Sales Trends:**
+   - Display monthly sales aggregated across all 3 years
+   - X-axis: Months (Jan-Dec)
+   - Y-axis: Total Sales Amount
+   - Include month-over-month comparison capability or trend line
+   - Responsive sizing for different screen sizes
+
+4. **Clustered Bar Chart - Best Selling Category:**
+   - Compare sales performance across all product categories
+   - Show top categories with their respective sales values
+   - Use different colors for visual clarity
+   - Sort in descending order by sales amount
+
+5. **Clustered Bar Chart - Top 5 Selling Subcategories:**
+   - Display the top 5 performing subcategories
+   - Compare subcategory performance with value labels on bars
+   - Sort by sales amount in descending order
+   - Highlight top performer distinctly
+
+**Design Requirements:**
+- Professional, modern UI with clean layout
+- Consistent color scheme and typography
+- Responsive design that works on desktop and tablets
+- Use proper spacing and visual hierarchy
+- Include data labels where appropriate for clarity
+- Add interactive tooltips showing exact values on hover
+
+**Technical Requirements:**
+- Build using React with appropriate charting library (e.g., Recharts, Chart.js)
+- Include file upload functionality for Excel files
+- Ensure fast data processing even with large datasets
+- Add loading indicators during data processing
+- Include error handling with user-friendly messages
+
+**Functionality:**
+- Allow users to upload their Excel file directly
+- Parse data automatically and populate all visualizations
+- Real-time dashboard updates after file upload
+- Option to filter by date range if desired
+- Display summary statistics below KPIs
+
+**Polish & UX:**
+- Professional dashboard title/header
+- Clear section labels and descriptions
+- Intuitive layout flow (KPIs first, then key metrics)
+- Consistent styling across all charts
+- Proper spacing and padding for readability
+
+**Additional Features (Optional):**
+
+- Export dashboard as PDF/PNG
+- Drill-down capability (click category to see subcategories)
+- Year-over-year comparison toggle
+- Data filtering by date range
+- Search functionality for categories/subcategories
+- Full HTML file of the dashboard
