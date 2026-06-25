@@ -1,0 +1,54 @@
+You are the world's best UI/UX designer.
+
+Design a premium, modern, visually stunning landing page.
+
+Business:
+AI Marketing Agency
+
+Target Audience:
+Startups
+
+Style:
+Apple + Stripe + Linear
+
+Color Palette:
+White
+Black
+Blue Gradient
+
+Typography:
+Minimal
+
+Animations:
+Smooth scroll
+Fade in
+Glassmorphism
+Hover Effects
+Micro interactions
+
+Sections:
+
+Hero
+
+Services
+
+Portfolio
+
+Testimonials
+
+Pricing
+
+FAQ
+
+Contact
+
+Requirements
+
+Responsive
+
+SEO Friendly
+
+Fast Loading
+
+Generate complete HTML CSS JavaScript.
+Provoide me the downloadable Zip File including all files and folders.

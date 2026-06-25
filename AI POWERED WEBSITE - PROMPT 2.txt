@@ -1,0 +1,71 @@
+Act as a Senior Product Designer at Apple.
+
+Create a luxury SaaS landing page.
+
+Use
+
+Glassmorphism
+
+Gradient Backgrounds
+
+Animated Cards
+
+Dark Theme
+
+Floating UI
+
+Rounded Corners
+
+Premium Shadows
+
+Parallax
+
+Modern Typography
+
+Responsive Layout
+
+Include
+
+Navbar
+
+Hero
+
+Features
+
+Stats
+
+Pricing
+
+Testimonials
+
+Footer
+
+Animations using GSAP
+
+Icons using Lucide
+
+Responsive Design
+
+Generate production-ready HTML CSS JavaScript.
+
+-----------------------------------------------------------------------
+
+For Making Changes
+
+Improve the previous design.
+
+Make it look like it won Awwwards.
+
+Increase whitespace.
+
+Improve typography hierarchy.
+
+Use premium gradients.
+
+Improve CTA.
+
+Improve mobile responsiveness.
+
+Add subtle animations.
+
+Optimize performance.
