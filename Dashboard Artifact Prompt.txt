@@ -1,4 +1,4 @@
-Create an interactive sales dashboard using React with the following specifications:
+Create an interactive sales dashboard using HTML and JS with the following specifications:
 
 **Objective:**
 Build a professional, responsive dashboard that visualizes 3 years of sales data with key business metrics and actionable insights.
