@@ -51,4 +51,5 @@ SEO Friendly
 Fast Loading
 
 Generate complete HTML CSS JavaScript.
-Provoide me the downloadable Zip File including all files and folders.
+
+Provide me the downloadable files (separate css , separate js)
