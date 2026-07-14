@@ -1,0 +1,11 @@
+Build a Python face detection application.
+
+Use OpenCV.
+
+Open webcam.
+
+Draw green rectangle around faces.
+
+Show FPS.
+
+Allow saving screenshots.

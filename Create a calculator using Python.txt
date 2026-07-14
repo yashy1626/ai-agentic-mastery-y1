@@ -1,0 +1,13 @@
+Create a calculator using Python.
+
+Use Tkinter.
+
+Modern UI.
+
+Dark mode.
+
+Rounded buttons.
+
+History.
+
+Keyboard shortcuts.

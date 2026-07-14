@@ -1,0 +1,15 @@
+Create a Python weather application.
+
+Use tkinter.
+
+Use OpenWeather API.
+
+Search city.
+
+Show temperature.
+
+Show weather icon.
+
+Show humidity.
+
+Modern interface.
