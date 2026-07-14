@@ -1,0 +1,32 @@
+Design a premium AI website.
+
+Style inspiration:
+Apple
+OpenAI
+Vercel
+Freebuff
+
+Background:
+Animated galaxy
+
+Thousands of stars
+
+Occasional shooting stars
+
+Floating particles
+
+Purple and Blue gradients
+
+Dark mode
+
+Hero image with glowing effects
+
+Use Framer Motion style animations.
+
+Buttons should glow on hover.
+
+Cards should slightly float.
+
+Scrolling should reveal sections beautifully.
+
+Everything should feel expensive.
