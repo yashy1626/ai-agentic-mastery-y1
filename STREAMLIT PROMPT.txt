@@ -1,0 +1,676 @@
+# Build a Professional Automated Data Cleaning Application Using Streamlit
+
+Create a professional, user-friendly **Data Cleaning Web Application using Python and Streamlit**.
+
+The application should allow a user to upload a dataset in **CSV or Excel (.xlsx/.xls)** format, automatically analyze the dataset, provide data-quality insights, allow the user to select cleaning strategies, execute the cleaning process safely, display before/after results, and finally download the cleaned dataset.
+
+Use:
+
+* Python
+* Streamlit
+* Pandas
+* NumPy
+* OpenPyXL for Excel files where required
+
+The application should have a clean, modern, professional dashboard-style interface.
+
+---
+
+## 1. File Upload
+
+Create a prominent file uploader that accepts:
+
+* `.csv`
+* `.xlsx`
+* `.xls`
+
+Example interface:
+
+**Upload Your Dataset**
+
+> Drag and drop your CSV or Excel file here, or browse your computer.
+
+After uploading:
+
+1. Read the dataset using Pandas.
+2. Automatically detect the file type.
+3. Load the dataset into a Pandas DataFrame.
+4. Store the original dataset separately so that the original data is never accidentally overwritten.
+5. Display a success message after successful upload.
+6. Handle invalid/corrupted files gracefully with meaningful error messages.
+
+---
+
+## 2. Dataset Overview
+
+After the dataset is uploaded, display a professional **Dataset Overview** section.
+
+Show KPI cards containing:
+
+* Total Rows
+* Total Columns
+* Total Missing Values
+* Duplicate Rows
+* Numeric Columns
+* Categorical/String Columns
+
+Also display:
+
+### Column Names
+
+Show all column names in a clean table.
+
+Include:
+
+* Column Name
+* Data Type
+* Non-Null Count
+* Missing Count
+* Missing Percentage
+* Unique Values
+
+---
+
+## 3. Pandas-Style Dataset Information
+
+Provide a section called:
+
+### Dataset Information
+
+Reproduce the important information normally obtained from:
+
+```python
+df.info()
+```
+
+However, because `df.info()` primarily prints its output rather than returning a DataFrame, capture and present the relevant information in a professional Streamlit format.
+
+Display:
+
+* Column name
+* Data type
+* Non-null count
+* Null count
+* Memory usage where practical
+
+Also provide a summary such as:
+
+> Dataset contains X rows and Y columns.
+> X columns are numeric and Y columns are categorical.
+
+---
+
+## 4. Dataset Preview
+
+Create a **Data Preview** section.
+
+Allow the user to select how many rows they want to view:
+
+* 5
+* 10
+* 25
+* 50
+* 100
+
+Display the selected records using:
+
+```python
+st.dataframe()
+```
+
+Allow horizontal scrolling for datasets containing many columns.
+
+---
+
+## 5. Missing Value Analysis
+
+Create a dedicated section:
+
+### Missing Value Analysis
+
+Automatically calculate missing values for every column.
+
+Display a table containing:
+
+| Column | Data Type | Missing Values | Missing % |
+| ------ | --------- | -------------: | --------: |
+
+Only highlight columns that contain missing values.
+
+Also display:
+
+* Total missing cells
+* Number of columns containing missing values
+* Percentage of the entire dataset that is missing
+
+If there are no missing values, display a clear success message:
+
+> No missing values were detected in this dataset.
+
+---
+
+# 6. Missing Value Handling
+
+If missing values exist, ask the user how they want to handle them.
+
+Provide the following options:
+
+### Option 1 — Remove Missing Values
+
+Allow the user to choose:
+
+* Remove rows containing any missing value
+* Remove rows only when all values are missing
+
+Use appropriate Pandas functionality such as:
+
+```python
+dropna()
+```
+
+Before applying the operation, clearly display how many rows will be removed.
+
+Example:
+
+> This operation will remove 245 rows containing missing values.
+
+Ask for user confirmation before performing the operation.
+
+---
+
+### Option 2 — Fill Missing Values Automatically
+
+Provide an intelligent automatic cleaning mode.
+
+The application should determine the appropriate strategy based on the column's data type.
+
+#### Numeric Columns
+
+For numerical columns, allow strategies such as:
+
+* Mean
+* Median
+* Forward Fill
+* Backward Fill
+* Interpolation
+
+Recommended default:
+
+**Median**
+
+Use median when the data may contain outliers.
+
+For interpolation, use Pandas interpolation appropriately:
+
+```python
+df[column].interpolate()
+```
+
+Ensure interpolation is applied only to suitable numeric columns.
+
+---
+
+#### String / Categorical Columns
+
+For string or categorical columns, do NOT attempt numerical interpolation.
+
+Instead provide:
+
+* Mode
+* Forward Fill
+* Backward Fill
+* Custom value such as `"Unknown"`
+
+Recommended default:
+
+**Mode**
+
+If a mode cannot be determined because the column contains no valid non-null values, safely fall back to `"Unknown"`.
+
+---
+
+#### Datetime Columns
+
+Automatically identify datetime columns where possible.
+
+For datetime columns, provide appropriate options such as:
+
+* Forward Fill
+* Backward Fill
+* Interpolation where logically appropriate
+
+Do not apply mean/median directly to datetime values unless explicitly supported and safely converted.
+
+---
+
+## 7. Intelligent Automatic Cleaning
+
+Add an option:
+
+### Automatically Clean Missing Values
+
+When enabled, the application should automatically determine the appropriate cleaning strategy.
+
+Use logic similar to:
+
+```text
+IF column is numeric:
+    use median
+
+ELSE IF column is categorical/string:
+    use mode
+    if mode does not exist:
+        use "Unknown"
+
+ELSE IF column is datetime:
+    use forward fill/backward fill
+
+ELSE:
+    use the safest applicable method
+```
+
+The application should never apply a numerical strategy to a string column or a categorical strategy to an inappropriate numerical column.
+
+Before cleaning, show the user a summary of the planned operations.
+
+Example:
+
+```text
+age              → Median
+salary           → Median
+city             → Mode
+department       → Mode
+joining_date     → Forward Fill
+```
+
+Allow the user to approve the operation.
+
+---
+
+# 8. Duplicate Record Detection
+
+Create a section:
+
+### Duplicate Records
+
+Automatically identify duplicate rows using:
+
+```python
+df.duplicated()
+```
+
+Display:
+
+* Number of duplicate rows
+* Percentage of duplicate rows
+
+If duplicates exist, provide an option:
+
+**Remove Duplicate Records**
+
+Before removal, show:
+
+> 125 duplicate records were detected and will be removed.
+
+Allow the user to confirm before removing them.
+
+Use:
+
+```python
+df.drop_duplicates()
+```
+
+The original uploaded dataset must remain unchanged.
+
+---
+
+# 9. Cleaning Pipeline
+
+Create a structured cleaning pipeline.
+
+The application should execute operations in a logical order:
+
+1. Load original dataset
+2. Analyze dataset
+3. Detect missing values
+4. Handle missing values
+5. Detect duplicate records
+6. Remove duplicates
+7. Validate the cleaned dataset
+8. Generate cleaning statistics
+9. Display cleaned dataset
+
+Do not permanently modify the original DataFrame.
+
+Maintain separate objects such as:
+
+```python
+original_df
+cleaned_df
+```
+
+This makes it possible to compare the dataset before and after cleaning.
+
+---
+
+# 10. Before vs After Comparison
+
+After cleaning, display a section:
+
+### Cleaning Results
+
+Show comparison metrics:
+
+| Metric         | Before | After | Change |
+| -------------- | -----: | ----: | -----: |
+| Rows           |        |       |        |
+| Columns        |        |       |        |
+| Missing Values |        |       |        |
+| Duplicate Rows |        |       |        |
+
+Also show:
+
+* Number of rows removed
+* Number of missing values resolved
+* Number of duplicates removed
+* Columns affected by cleaning
+
+Example:
+
+> Cleaning completed successfully.
+
+> 245 missing values handled
+> 87 duplicate rows removed
+> 160 rows retained
+
+---
+
+# 11. Cleaned Dataset Preview
+
+Display the cleaned DataFrame using:
+
+```python
+st.dataframe(cleaned_df)
+```
+
+Provide options to inspect:
+
+* First N rows
+* Last N rows
+* Random sample
+
+Allow the user to verify the cleaned data before downloading it.
+
+---
+
+# 12. Data Validation
+
+After cleaning, automatically validate the resulting dataset.
+
+Check:
+
+* Remaining missing values
+* Remaining duplicate rows
+* Number of rows
+* Number of columns
+* Data types
+* Unexpected empty columns
+* Completely empty rows
+* Completely empty columns
+
+If missing values still remain, explain which columns contain them and why.
+
+Do not falsely claim that the dataset is completely clean if unresolved missing values remain.
+
+Display a final status such as:
+
+### Data Quality Status
+
+✅ No missing values
+✅ No duplicate records
+✅ Dataset successfully cleaned
+
+Or:
+
+⚠️ Some missing values remain in specific columns and require manual review.
+
+---
+
+# 13. Download Cleaned Dataset
+
+Provide a prominent:
+
+### Download Cleaned Dataset
+
+button.
+
+The user should be able to download the cleaned DataFrame as:
+
+**CSV**
+
+Use:
+
+```python
+st.download_button()
+```
+
+Optionally also provide:
+
+**Excel**
+
+Generate an Excel file in memory using `BytesIO` rather than unnecessarily creating temporary files on disk.
+
+The downloaded filename should be based on the original filename.
+
+For example:
+
+```text
+customer_data.csv
+```
+
+becomes:
+
+```text
+customer_data_cleaned.csv
+```
+
+---
+
+# 14. Reset / Start Over
+
+Provide a:
+
+### Start Over
+
+or
+
+### Reset Dataset
+
+button.
+
+When clicked:
+
+* Clear the current dataset
+* Clear cleaning results
+* Reset selections
+* Return the application to the upload screen
+
+Use Streamlit session state appropriately.
+
+---
+
+# 15. Professional UI/UX
+
+Design the application as a professional data-quality dashboard.
+
+Suggested structure:
+
+```text
+--------------------------------------------------
+        DATA CLEANING & QUALITY PLATFORM
+--------------------------------------------------
+
+Upload Dataset
+
+[ Upload CSV / Excel ]
+
+--------------------------------------------------
+Dataset Overview
+--------------------------------------------------
+
+[ Rows ] [ Columns ] [ Missing ] [ Duplicates ]
+
+--------------------------------------------------
+Dataset Information
+--------------------------------------------------
+
+Column | Data Type | Non-Null | Missing | Unique
+
+--------------------------------------------------
+Data Preview
+--------------------------------------------------
+
+[DataFrame]
+
+--------------------------------------------------
+Missing Value Analysis
+--------------------------------------------------
+
+[Missing Value Table]
+
+--------------------------------------------------
+Cleaning Configuration
+--------------------------------------------------
+
+Missing Value Strategy
+○ Remove Rows
+○ Automatic Handling
+○ Custom Handling
+
+Duplicate Handling
+☑ Remove Duplicate Records
+
+[ Preview Cleaning ]
+
+--------------------------------------------------
+Cleaning Results
+--------------------------------------------------
+
+Before vs After Metrics
+
+--------------------------------------------------
+Cleaned Dataset
+--------------------------------------------------
+
+[DataFrame]
+
+[ Download CSV ] [ Download Excel ]
+
+--------------------------------------------------
+```
+
+Use Streamlit features such as:
+
+* `st.sidebar`
+* `st.columns`
+* `st.metric`
+* `st.expander`
+* `st.tabs`
+* `st.dataframe`
+* `st.progress`
+* `st.success`
+* `st.warning`
+* `st.error`
+* `st.info`
+
+Use a consistent professional layout and avoid unnecessary visual clutter.
+
+---
+
+# 16. Error Handling
+
+The application must be robust.
+
+Handle:
+
+* Invalid CSV files
+* Corrupted Excel files
+* Empty datasets
+* Files containing only headers
+* Completely empty columns
+* Columns containing mixed data types
+* Columns containing all missing values
+* Missing values that cannot be filled using mode
+* Invalid date values
+* Encoding issues in CSV files
+* Large datasets where possible
+
+Never allow the application to crash because of a problematic column.
+
+Display meaningful messages explaining what went wrong and, where possible, how the user can resolve it.
+
+---
+
+# 17. Code Quality
+
+Structure the application professionally.
+
+Do not place the entire application in one huge function.
+
+Use reusable functions such as:
+
+```python
+load_dataset()
+get_dataset_summary()
+analyze_missing_values()
+detect_column_types()
+handle_missing_values()
+remove_duplicates()
+validate_dataset()
+generate_cleaning_report()
+create_download_file()
+```
+
+Use clear variable names and appropriate comments.
+
+Add type hints where practical.
+
+Keep data-cleaning logic separate from UI logic wherever possible.
+
+---
+
+# 18. Important Data-Safety Requirements
+
+The application must:
+
+* Never modify the original uploaded DataFrame directly.
+* Create a separate cleaned DataFrame.
+* Show the user what operations will be performed before applying them.
+* Avoid silently deleting data.
+* Clearly report how many records were removed.
+* Preserve column names.
+* Preserve data types wherever reasonably possible.
+* Avoid inappropriate transformations based solely on column names.
+* Handle empty/all-null columns safely.
+* Ensure the downloaded file contains the cleaned dataset, not the original dataset.
+
+---
+
+# 19. Final Deliverable
+
+Provide a complete, executable Streamlit application.
+
+The solution should include:
+
+1. `app.py`
+2. `requirements.txt`
+3. Clear installation instructions
+4. Command to run the application:
+
+```bash
+streamlit run app.py
+```
+
+The code should be production-oriented, readable, modular, and suitable for extending later with additional data-quality features.
+
+The final application should feel like a **professional automated data-cleaning tool**, rather than a basic Streamlit demonstration.
