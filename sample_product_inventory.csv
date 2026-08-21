@@ -1,0 +1,311 @@
+product_id,product_name,category,unit_price,quantity_in_stock,reorder_level,supplier,last_restocked,warehouse_location
+PROD-00001,Product Toys 0,Clothing,186.19,328.0,52.0,Supplier A,2022-02-08,Warehouse A
+PROD-00002,Product Clothing 1,Home & Garden,275.7,465.0,87.0,Supplier D,2022-03-30,Warehouse A
+PROD-00003,Product Electronics 2,Clothing,163.6,521.0,83.0,Supplier C,2022-09-13,Warehouse B
+PROD-00004,Product Home & Garden 3,Sports,452.87,611.0,73.0,Supplier A,,
+PROD-00005,Product Clothing 4,Books,,810.0,41.0,Supplier D,2022-11-14,Warehouse A
+PROD-00006,Product Electronics 5,Clothing,294.15,,29.0,Supplier C,2022-03-25,
+PROD-00007,Product Electronics 6,Toys,321.68,217.0,24.0,,2022-12-25,Warehouse A
+PROD-00008,Product Home & Garden 7,Books,276.47,953.0,36.0,,2022-08-03,Warehouse A
+PROD-00009,Product Home & Garden 8,Electronics,344.88,867.0,92.0,Supplier D,,Warehouse C
+PROD-00010,Product Home & Garden 9,Books,11.43,833.0,36.0,Supplier D,2022-03-06,Warehouse A
+PROD-00011,Product Home & Garden 10,Home & Garden,79.3,459.0,88.0,Supplier A,2022-09-20,Warehouse C
+PROD-00012,Product Sports 11,Sports,173.81,,73.0,Supplier A,2022-08-13,Warehouse B
+PROD-00013,Product Toys 12,Sports,,801.0,12.0,Supplier C,2022-07-10,
+PROD-00014,Product Electronics 13,Sports,6.33,519.0,20.0,,,
+PROD-00015,Product Sports 14,Books,197.62,857.0,,Supplier C,2022-06-22,Warehouse A
+PROD-00016,Product Books 15,Clothing,259.14,864.0,,Supplier D,2022-04-04,Warehouse B
+PROD-00017,Product Books 16,Electronics,414.42,604.0,,,2022-01-06,Warehouse C
+PROD-00018,Product Toys 17,Sports,46.93,694.0,88.0,,2022-06-16,Warehouse A
+PROD-00019,Product Sports 18,Clothing,159.77,558.0,21.0,Supplier A,,Warehouse B
+PROD-00020,Product Sports 19,Sports,15.16,967.0,62.0,Supplier A,2022-12-17,Warehouse B
+PROD-00021,Product Sports 20,Toys,228.97,502.0,34.0,Supplier D,2022-10-12,Warehouse C
+PROD-00022,Product Electronics 21,Books,70.11,264.0,85.0,Supplier B,2022-03-06,Warehouse A
+PROD-00023,Product Clothing 22,Home & Garden,310.32,47.0,48.0,Supplier C,2022-07-10,
+PROD-00024,Product Home & Garden 23,Electronics,248.42,571.0,,Supplier A,2022-10-20,Warehouse B
+PROD-00025,Product Home & Garden 24,Electronics,475.81,,46.0,,2022-02-09,
+PROD-00026,Product Toys 25,Toys,,,98.0,Supplier B,2022-09-14,
+PROD-00027,Product Toys 26,Toys,393.91,,78.0,Supplier A,2022-11-01,Warehouse C
+PROD-00028,Product Electronics 27,Clothing,453.34,277.0,,Supplier A,,Warehouse C
+PROD-00029,Product Toys 28,Books,232.16,719.0,86.0,,,
+PROD-00030,Product Clothing 29,Books,363.32,136.0,51.0,Supplier C,2022-05-25,Warehouse C
+PROD-00031,Product Toys 30,Home & Garden,445.53,731.0,18.0,,,
+PROD-00032,Product Clothing 31,Home & Garden,124.85,714.0,74.0,Supplier C,2022-01-21,Warehouse C
+PROD-00033,Product Toys 32,Home & Garden,369.71,693.0,33.0,Supplier A,2022-12-11,Warehouse B
+PROD-00034,Product Books 33,Sports,329.53,,32.0,Supplier A,2022-06-12,
+PROD-00035,Product Electronics 34,Clothing,388.13,670.0,51.0,Supplier D,2022-02-20,Warehouse A
+PROD-00036,Product Electronics 35,Sports,84.45,385.0,23.0,Supplier B,2022-02-12,Warehouse A
+PROD-00037,Product Books 36,Electronics,353.88,44.0,80.0,,2022-09-19,Warehouse B
+PROD-00038,Product Toys 37,Sports,146.16,,31.0,Supplier C,2022-12-15,Warehouse B
+PROD-00039,Product Electronics 38,Home & Garden,,937.0,44.0,Supplier C,2022-07-04,Warehouse C
+PROD-00040,Product Electronics 39,Home & Garden,88.85,,66.0,Supplier B,2022-04-23,Warehouse C
+PROD-00041,Product Home & Garden 40,Clothing,271.08,675.0,84.0,Supplier A,2022-05-11,Warehouse A
+PROD-00042,Product Toys 41,Books,235.06,377.0,87.0,Supplier C,2022-02-24,Warehouse B
+PROD-00043,Product Sports 42,Toys,189.67,558.0,57.0,Supplier C,2022-01-13,
+PROD-00044,Product Home & Garden 43,Books,323.17,948.0,52.0,Supplier C,2022-07-20,
+PROD-00045,Product Sports 44,Sports,176.4,532.0,61.0,Supplier D,2022-08-15,Warehouse C
+PROD-00046,Product Sports 45,Books,438.58,600.0,38.0,,2022-11-25,Warehouse B
+PROD-00047,Product Toys 46,Sports,,769.0,87.0,Supplier A,2022-08-21,Warehouse B
+PROD-00048,Product Electronics 47,Electronics,388.16,467.0,16.0,,2022-01-02,Warehouse B
+PROD-00049,Product Toys 48,Clothing,448.61,152.0,11.0,,2022-09-26,Warehouse A
+PROD-00050,Product Books 49,Books,209.31,913.0,12.0,Supplier A,2022-06-08,Warehouse A
+PROD-00051,Product Clothing 50,Books,380.24,805.0,,Supplier B,,Warehouse C
+PROD-00052,Product Sports 51,Clothing,210.88,557.0,77.0,Supplier D,2022-06-07,Warehouse A
+PROD-00053,Product Sports 52,Home & Garden,,769.0,91.0,Supplier A,2022-10-27,
+PROD-00054,Product Toys 53,Electronics,300.58,224.0,70.0,,2022-01-19,Warehouse B
+PROD-00055,Product Clothing 54,Toys,234.58,,44.0,Supplier D,2022-04-12,Warehouse A
+PROD-00056,Product Electronics 55,Home & Garden,297.45,,,Supplier C,2022-10-12,Warehouse C
+PROD-00057,Product Home & Garden 56,Clothing,281.4,974.0,61.0,Supplier D,,Warehouse A
+PROD-00058,Product Clothing 57,Clothing,442.3,60.0,77.0,Supplier D,2022-07-17,Warehouse B
+PROD-00059,Product Toys 58,Home & Garden,78.64,74.0,31.0,Supplier A,2022-10-23,
+PROD-00060,Product Electronics 59,Books,,198.0,82.0,Supplier C,2022-03-18,Warehouse A
+PROD-00061,Product Clothing 60,Toys,487.77,176.0,40.0,,2022-07-15,Warehouse B
+PROD-00062,Product Electronics 61,Sports,284.55,285.0,77.0,,2022-09-15,
+PROD-00063,Product Books 62,Books,186.04,510.0,31.0,Supplier D,2022-12-20,Warehouse A
+PROD-00064,Product Sports 63,Sports,201.11,456.0,25.0,Supplier D,2023-01-01,
+PROD-00065,Product Books 64,Clothing,201.44,350.0,38.0,,,Warehouse B
+PROD-00066,Product Clothing 65,Clothing,387.62,204.0,93.0,Supplier B,2022-10-04,
+PROD-00067,Product Books 66,Toys,32.14,435.0,67.0,Supplier D,2022-09-24,Warehouse C
+PROD-00068,Product Toys 67,Books,,679.0,90.0,Supplier B,,
+PROD-00069,Product Electronics 68,Electronics,376.09,496.0,,Supplier A,2022-05-05,Warehouse B
+PROD-00070,Product Electronics 69,Toys,,767.0,48.0,Supplier B,2022-07-02,Warehouse B
+PROD-00071,Product Sports 70,Sports,343.32,108.0,52.0,Supplier D,,Warehouse B
+PROD-00072,Product Toys 71,Home & Garden,445.79,184.0,93.0,Supplier D,2022-11-22,Warehouse C
+PROD-00073,Product Books 72,Books,397.2,55.0,28.0,,2022-03-19,Warehouse C
+PROD-00074,Product Clothing 73,Sports,487.31,869.0,20.0,Supplier D,2022-10-26,Warehouse B
+PROD-00075,Product Electronics 74,Sports,376.71,162.0,76.0,Supplier D,2022-11-16,Warehouse A
+PROD-00076,Product Sports 75,Home & Garden,468.48,413.0,56.0,Supplier D,,Warehouse C
+PROD-00077,Product Home & Garden 76,Toys,59.35,430.0,26.0,Supplier C,2022-12-01,Warehouse B
+PROD-00078,Product Home & Garden 77,Clothing,,23.0,80.0,Supplier B,2022-03-28,Warehouse B
+PROD-00079,Product Electronics 78,Books,421.34,122.0,68.0,Supplier D,2022-05-10,Warehouse C
+PROD-00080,Product Toys 79,Books,351.51,639.0,42.0,,2022-09-07,Warehouse C
+PROD-00081,Product Toys 80,Books,123.79,974.0,,Supplier C,2022-05-07,
+PROD-00082,Product Sports 81,Home & Garden,338.19,549.0,93.0,,,
+PROD-00083,Product Home & Garden 82,Books,473.6,,56.0,Supplier A,,Warehouse B
+PROD-00084,Product Home & Garden 83,Home & Garden,243.88,,66.0,Supplier D,2022-03-24,Warehouse C
+PROD-00085,Product Books 84,Clothing,115.87,641.0,34.0,Supplier D,2022-07-14,Warehouse A
+PROD-00086,Product Home & Garden 85,Sports,334.02,,34.0,Supplier A,2022-02-27,Warehouse C
+PROD-00087,Product Clothing 86,Books,212.55,172.0,,Supplier A,2022-03-23,Warehouse C
+PROD-00088,Product Books 87,Electronics,156.72,446.0,54.0,Supplier D,2022-04-11,
+PROD-00089,Product Electronics 88,Sports,,,21.0,Supplier D,2022-10-30,Warehouse A
+PROD-00090,Product Toys 89,Toys,277.2,700.0,27.0,,2022-07-27,Warehouse B
+PROD-00091,Product Books 90,Home & Garden,,790.0,44.0,Supplier A,2022-07-28,Warehouse A
+PROD-00092,Product Sports 91,Electronics,66.89,,50.0,,2022-08-05,Warehouse A
+PROD-00093,Product Electronics 92,Sports,268.16,574.0,84.0,Supplier A,2022-01-26,
+PROD-00094,Product Home & Garden 93,Toys,361.61,720.0,67.0,Supplier B,2022-07-05,
+PROD-00095,Product Toys 94,Toys,443.32,,87.0,Supplier C,2022-03-29,Warehouse B
+PROD-00096,Product Electronics 95,Clothing,20.11,212.0,71.0,Supplier A,2022-06-16,
+PROD-00097,Product Clothing 96,Clothing,,699.0,54.0,Supplier D,2022-06-25,Warehouse A
+PROD-00098,Product Sports 97,Toys,453.38,379.0,51.0,Supplier B,2022-08-02,
+PROD-00099,Product Home & Garden 98,Home & Garden,426.53,602.0,98.0,Supplier B,2022-10-11,Warehouse B
+PROD-00100,Product Books 99,Clothing,401.58,100.0,,Supplier D,2022-07-16,Warehouse B
+PROD-00101,Product Clothing 100,Electronics,92.33,,88.0,Supplier D,2022-07-21,
+PROD-00102,Product Sports 101,Electronics,63.73,413.0,,Supplier B,,
+PROD-00103,Product Electronics 102,Electronics,243.6,934.0,,Supplier A,2022-11-20,Warehouse B
+PROD-00104,Product Books 103,Clothing,441.43,741.0,55.0,Supplier B,2022-04-09,Warehouse A
+PROD-00105,Product Sports 104,Books,468.0,725.0,49.0,Supplier C,,Warehouse B
+PROD-00106,Product Toys 105,Clothing,415.8,23.0,61.0,,2022-08-02,Warehouse B
+PROD-00107,Product Home & Garden 106,Home & Garden,357.25,531.0,89.0,Supplier B,2022-06-24,
+PROD-00108,Product Sports 107,Electronics,363.55,642.0,81.0,Supplier B,2022-09-07,Warehouse B
+PROD-00109,Product Toys 108,Books,379.03,767.0,82.0,Supplier C,,
+PROD-00110,Product Sports 109,Home & Garden,361.72,104.0,49.0,Supplier B,,Warehouse B
+PROD-00111,Product Electronics 110,Books,336.19,646.0,64.0,Supplier C,2022-09-20,Warehouse B
+PROD-00112,Product Electronics 111,Sports,176.21,551.0,,Supplier B,2022-01-17,Warehouse B
+PROD-00113,Product Books 112,Sports,137.75,255.0,37.0,Supplier A,2022-11-03,Warehouse A
+PROD-00114,Product Electronics 113,Toys,167.4,324.0,33.0,Supplier A,2022-12-09,Warehouse C
+PROD-00115,Product Electronics 114,Clothing,71.3,631.0,,Supplier A,2022-07-05,Warehouse C
+PROD-00116,Product Books 115,Electronics,87.24,648.0,99.0,Supplier B,2022-03-18,Warehouse B
+PROD-00117,Product Electronics 116,Electronics,231.55,473.0,28.0,Supplier B,2022-07-23,
+PROD-00118,Product Toys 117,Toys,160.14,774.0,39.0,Supplier C,,Warehouse B
+PROD-00119,Product Clothing 118,Toys,398.07,456.0,20.0,Supplier A,2022-08-12,Warehouse A
+PROD-00120,Product Clothing 119,Toys,296.02,681.0,23.0,Supplier B,2022-08-26,
+PROD-00121,Product Home & Garden 120,Toys,391.74,368.0,,,,Warehouse C
+PROD-00122,Product Books 121,Home & Garden,113.35,975.0,75.0,Supplier B,2022-07-28,Warehouse B
+PROD-00123,Product Sports 122,Home & Garden,118.97,972.0,98.0,,,
+PROD-00124,Product Sports 123,Books,352.85,493.0,24.0,,2022-09-13,Warehouse C
+PROD-00125,Product Sports 124,Books,12.88,172.0,44.0,Supplier C,2022-06-13,Warehouse A
+PROD-00126,Product Books 125,Home & Garden,393.93,292.0,24.0,,2022-05-18,Warehouse A
+PROD-00127,Product Electronics 126,Clothing,263.8,512.0,18.0,Supplier A,2022-08-30,Warehouse A
+PROD-00128,Product Electronics 127,Clothing,175.6,873.0,56.0,Supplier A,2022-02-23,Warehouse C
+PROD-00129,Product Toys 128,Books,,446.0,23.0,,2022-10-27,Warehouse C
+PROD-00130,Product Books 129,Books,285.41,121.0,,Supplier D,,
+PROD-00131,Product Clothing 130,Home & Garden,332.98,256.0,52.0,Supplier D,2022-08-01,Warehouse B
+PROD-00132,Product Books 131,Toys,411.23,451.0,33.0,Supplier C,2022-02-08,
+PROD-00133,Product Sports 132,Books,329.45,705.0,99.0,Supplier A,2022-09-04,Warehouse A
+PROD-00134,Product Clothing 133,Electronics,31.29,363.0,62.0,Supplier C,2022-12-27,Warehouse B
+PROD-00135,Product Home & Garden 134,Clothing,,744.0,56.0,,2022-09-24,Warehouse C
+PROD-00136,Product Books 135,Electronics,19.1,382.0,22.0,Supplier A,2022-07-02,Warehouse A
+PROD-00137,Product Toys 136,Electronics,80.46,401.0,53.0,Supplier A,2022-02-14,
+PROD-00138,Product Clothing 137,Home & Garden,47.1,377.0,87.0,Supplier A,,Warehouse B
+PROD-00139,Product Electronics 138,Books,242.31,627.0,77.0,Supplier A,2022-07-12,
+PROD-00140,Product Clothing 139,Sports,302.05,858.0,42.0,Supplier B,2022-12-31,
+PROD-00141,Product Sports 140,Books,60.47,427.0,12.0,Supplier D,2022-02-13,Warehouse B
+PROD-00142,Product Toys 141,Home & Garden,52.84,841.0,,Supplier D,2022-08-20,
+PROD-00143,Product Clothing 142,Toys,33.1,159.0,20.0,,2022-10-01,Warehouse B
+PROD-00144,Product Home & Garden 143,Home & Garden,56.71,794.0,69.0,,,Warehouse B
+PROD-00145,Product Home & Garden 144,Electronics,,704.0,98.0,Supplier A,2022-05-15,Warehouse B
+PROD-00146,Product Home & Garden 145,Toys,125.35,389.0,25.0,Supplier D,2022-08-10,Warehouse A
+PROD-00147,Product Home & Garden 146,Clothing,213.0,102.0,13.0,,2022-03-10,Warehouse A
+PROD-00148,Product Home & Garden 147,Home & Garden,15.45,,12.0,Supplier B,2022-04-08,Warehouse B
+PROD-00149,Product Electronics 148,Electronics,221.33,,,Supplier A,,Warehouse C
+PROD-00150,Product Clothing 149,Toys,375.65,,,Supplier C,2022-08-16,
+PROD-00151,Product Sports 150,Home & Garden,427.84,285.0,28.0,Supplier C,2022-03-01,Warehouse B
+PROD-00152,Product Toys 151,Clothing,282.85,696.0,25.0,Supplier D,2022-10-05,Warehouse A
+PROD-00153,Product Home & Garden 152,Books,272.05,227.0,36.0,Supplier C,,Warehouse A
+PROD-00154,Product Toys 153,Home & Garden,26.2,913.0,13.0,Supplier A,2022-03-25,Warehouse A
+PROD-00155,Product Electronics 154,Home & Garden,190.91,289.0,72.0,Supplier D,,
+PROD-00156,Product Toys 155,Toys,103.62,946.0,39.0,Supplier C,2022-10-04,Warehouse C
+PROD-00157,Product Books 156,Books,66.74,771.0,10.0,Supplier B,2022-07-13,Warehouse B
+PROD-00158,Product Home & Garden 157,Electronics,417.23,624.0,58.0,,,Warehouse B
+PROD-00159,Product Electronics 158,Clothing,328.34,510.0,51.0,,2022-04-18,Warehouse C
+PROD-00160,Product Books 159,Toys,398.85,91.0,98.0,Supplier B,2022-03-06,
+PROD-00161,Product Clothing 160,Electronics,166.22,978.0,11.0,Supplier B,2022-03-13,Warehouse B
+PROD-00162,Product Home & Garden 161,Clothing,425.71,568.0,59.0,Supplier A,2022-05-02,
+PROD-00163,Product Sports 162,Home & Garden,138.98,975.0,,Supplier D,2022-06-26,Warehouse A
+PROD-00164,Product Clothing 163,Home & Garden,,588.0,35.0,Supplier A,2022-02-09,Warehouse A
+PROD-00165,Product Toys 164,Electronics,340.14,534.0,51.0,,,Warehouse B
+PROD-00166,Product Toys 165,Sports,63.37,216.0,100.0,,2022-02-22,Warehouse C
+PROD-00167,Product Sports 166,Sports,50.94,471.0,,Supplier A,2022-11-13,Warehouse A
+PROD-00168,Product Toys 167,Sports,117.14,997.0,78.0,Supplier C,2022-04-28,Warehouse C
+PROD-00169,Product Clothing 168,Sports,191.44,809.0,72.0,Supplier A,2022-12-10,
+PROD-00170,Product Books 169,Home & Garden,15.26,567.0,,Supplier C,,Warehouse A
+PROD-00171,Product Books 170,Books,445.65,328.0,81.0,Supplier D,2022-08-21,Warehouse B
+PROD-00172,Product Electronics 171,Clothing,200.87,91.0,,Supplier D,,Warehouse A
+PROD-00173,Product Clothing 172,Home & Garden,438.79,633.0,60.0,Supplier A,2022-06-14,Warehouse C
+PROD-00174,Product Books 173,Clothing,182.18,339.0,26.0,Supplier A,2022-12-23,Warehouse A
+PROD-00175,Product Sports 174,Clothing,358.24,344.0,69.0,Supplier A,2022-05-15,
+PROD-00176,Product Clothing 175,Books,260.67,238.0,,Supplier A,,
+PROD-00177,Product Clothing 176,Electronics,105.84,716.0,28.0,Supplier B,,Warehouse A
+PROD-00178,Product Clothing 177,Clothing,184.86,749.0,22.0,Supplier C,,Warehouse B
+PROD-00179,Product Home & Garden 178,Toys,338.53,666.0,52.0,Supplier B,,Warehouse B
+PROD-00180,Product Sports 179,Electronics,249.85,536.0,15.0,Supplier D,2022-08-23,
+PROD-00181,Product Electronics 180,Toys,,736.0,30.0,Supplier D,2022-07-25,Warehouse A
+PROD-00182,Product Books 181,Sports,494.98,213.0,76.0,Supplier C,2022-09-05,Warehouse C
+PROD-00183,Product Toys 182,Home & Garden,445.05,928.0,,Supplier D,2022-02-02,Warehouse C
+PROD-00184,Product Sports 183,Clothing,365.28,687.0,72.0,Supplier C,2022-04-04,Warehouse A
+PROD-00185,Product Electronics 184,Sports,30.96,573.0,23.0,Supplier C,2022-02-15,
+PROD-00186,Product Home & Garden 185,Sports,476.15,796.0,34.0,Supplier C,2022-10-01,Warehouse A
+PROD-00187,Product Electronics 186,Clothing,476.65,78.0,34.0,,2022-10-18,
+PROD-00188,Product Books 187,Sports,464.79,787.0,23.0,Supplier D,2022-01-17,Warehouse A
+PROD-00189,Product Home & Garden 188,Home & Garden,,866.0,32.0,Supplier C,2022-09-12,Warehouse C
+PROD-00190,Product Electronics 189,Electronics,239.95,157.0,44.0,,2022-10-21,Warehouse A
+PROD-00191,Product Books 190,Clothing,280.55,,60.0,Supplier C,,
+PROD-00192,Product Clothing 191,Books,70.03,222.0,19.0,,,Warehouse B
+PROD-00193,Product Clothing 192,Sports,328.59,457.0,56.0,Supplier B,2022-06-10,Warehouse A
+PROD-00194,Product Toys 193,Home & Garden,473.88,212.0,,Supplier D,,
+PROD-00195,Product Home & Garden 194,Sports,,440.0,51.0,Supplier A,2022-01-22,Warehouse C
+PROD-00196,Product Toys 195,Electronics,411.24,316.0,82.0,Supplier D,2022-06-01,Warehouse C
+PROD-00197,Product Sports 196,Clothing,88.5,929.0,87.0,Supplier B,,Warehouse C
+PROD-00198,Product Books 197,Home & Garden,422.03,43.0,70.0,,2022-05-26,Warehouse C
+PROD-00199,Product Electronics 198,Sports,93.35,482.0,51.0,Supplier A,2022-05-21,
+PROD-00200,Product Electronics 199,Books,436.51,,56.0,Supplier A,2022-03-17,Warehouse B
+PROD-00201,Product Clothing 200,Clothing,264.71,,66.0,,2022-09-14,Warehouse C
+PROD-00202,Product Home & Garden 201,Electronics,207.81,,47.0,Supplier D,2022-09-08,
+PROD-00203,Product Home & Garden 202,Home & Garden,168.53,707.0,,Supplier A,2022-12-19,Warehouse A
+PROD-00204,Product Sports 203,Sports,495.73,,71.0,Supplier C,2022-12-20,Warehouse C
+PROD-00205,Product Clothing 204,Clothing,283.76,58.0,17.0,Supplier C,2022-01-27,Warehouse B
+PROD-00206,Product Home & Garden 205,Books,15.41,509.0,80.0,Supplier A,2022-06-21,Warehouse C
+PROD-00207,Product Sports 206,Clothing,,903.0,82.0,Supplier C,2022-04-28,Warehouse A
+PROD-00208,Product Books 207,Toys,160.31,142.0,,,2022-12-20,Warehouse A
+PROD-00209,Product Toys 208,Clothing,180.67,871.0,92.0,Supplier D,2022-06-07,Warehouse B
+PROD-00210,Product Toys 209,Electronics,325.87,726.0,13.0,Supplier D,2022-09-07,
+PROD-00211,Product Books 210,Home & Garden,88.71,383.0,72.0,Supplier A,2022-01-28,Warehouse B
+PROD-00212,Product Home & Garden 211,Books,290.7,672.0,32.0,Supplier A,2022-09-10,Warehouse B
+PROD-00213,Product Clothing 212,Books,393.13,,18.0,,2022-12-23,
+PROD-00214,Product Electronics 213,Electronics,489.73,888.0,84.0,,2022-04-14,Warehouse B
+PROD-00215,Product Toys 214,Home & Garden,161.72,,57.0,Supplier A,,Warehouse B
+PROD-00216,Product Toys 215,Sports,174.53,478.0,92.0,Supplier B,,Warehouse C
+PROD-00217,Product Books 216,Sports,158.3,603.0,73.0,Supplier A,2022-09-10,Warehouse C
+PROD-00218,Product Home & Garden 217,Books,191.17,369.0,,Supplier A,2022-10-19,
+PROD-00219,Product Books 218,Electronics,30.95,45.0,83.0,Supplier C,2022-06-06,Warehouse B
+PROD-00220,Product Clothing 219,Books,254.22,722.0,67.0,Supplier B,2022-04-04,Warehouse C
+PROD-00221,Product Home & Garden 220,Clothing,345.06,545.0,,Supplier A,2022-02-03,Warehouse C
+PROD-00222,Product Clothing 221,Books,473.76,853.0,49.0,,2022-11-15,
+PROD-00223,Product Books 222,Books,385.36,538.0,,,,
+PROD-00224,Product Home & Garden 223,Electronics,257.37,,62.0,Supplier C,2022-02-01,Warehouse B
+PROD-00225,Product Electronics 224,Home & Garden,494.15,425.0,,Supplier D,2022-12-23,
+PROD-00226,Product Electronics 225,Books,144.35,56.0,69.0,Supplier D,2022-09-08,
+PROD-00227,Product Books 226,Sports,467.23,449.0,87.0,Supplier A,2022-05-25,
+PROD-00228,Product Electronics 227,Electronics,39.64,579.0,27.0,Supplier B,2022-09-11,Warehouse B
+PROD-00229,Product Electronics 228,Electronics,103.27,346.0,21.0,Supplier A,2022-05-19,Warehouse C
+PROD-00230,Product Books 229,Books,21.37,403.0,70.0,,2022-04-24,Warehouse C
+PROD-00231,Product Toys 230,Books,440.11,762.0,79.0,Supplier D,2022-03-24,Warehouse A
+PROD-00232,Product Books 231,Electronics,249.61,562.0,66.0,,2022-07-14,Warehouse B
+PROD-00233,Product Books 232,Home & Garden,362.8,324.0,42.0,Supplier B,,
+PROD-00234,Product Electronics 233,Electronics,,682.0,58.0,,2022-06-24,
+PROD-00235,Product Books 234,Books,372.01,923.0,12.0,Supplier B,2022-03-12,Warehouse A
+PROD-00236,Product Sports 235,Sports,433.36,574.0,90.0,,,Warehouse A
+PROD-00237,Product Home & Garden 236,Books,245.89,419.0,55.0,,,Warehouse A
+PROD-00238,Product Electronics 237,Electronics,291.93,35.0,21.0,Supplier D,2022-12-29,
+PROD-00239,Product Clothing 238,Home & Garden,9.31,427.0,82.0,Supplier B,,
+PROD-00240,Product Home & Garden 239,Electronics,,64.0,47.0,Supplier D,,Warehouse B
+PROD-00241,Product Sports 240,Sports,111.55,618.0,53.0,Supplier B,2022-03-12,Warehouse B
+PROD-00242,Product Clothing 241,Sports,64.43,307.0,34.0,Supplier A,,
+PROD-00243,Product Home & Garden 242,Books,79.87,402.0,82.0,Supplier C,,
+PROD-00244,Product Toys 243,Books,73.2,345.0,18.0,Supplier C,,Warehouse A
+PROD-00245,Product Sports 244,Electronics,,,18.0,Supplier B,2022-07-18,Warehouse A
+PROD-00246,Product Electronics 245,Clothing,248.29,416.0,50.0,,2022-09-21,Warehouse A
+PROD-00247,Product Clothing 246,Toys,,691.0,80.0,Supplier B,2022-11-19,Warehouse C
+PROD-00248,Product Home & Garden 247,Books,14.72,559.0,83.0,Supplier A,,Warehouse B
+PROD-00249,Product Home & Garden 248,Electronics,412.86,972.0,31.0,Supplier B,2022-08-07,Warehouse B
+PROD-00250,Product Sports 249,Clothing,151.67,732.0,42.0,Supplier B,2022-05-20,
+PROD-00251,Product Home & Garden 250,Electronics,388.85,,38.0,Supplier D,2022-01-12,Warehouse B
+PROD-00252,Product Home & Garden 251,Electronics,326.01,427.0,25.0,Supplier D,2022-11-07,
+PROD-00253,Product Clothing 252,Home & Garden,116.62,58.0,14.0,Supplier B,2022-07-13,Warehouse A
+PROD-00254,Product Sports 253,Books,218.56,450.0,64.0,Supplier C,2022-02-09,Warehouse C
+PROD-00255,Product Home & Garden 254,Electronics,437.98,435.0,26.0,Supplier A,,Warehouse A
+PROD-00256,Product Clothing 255,Sports,380.43,978.0,43.0,,2022-09-23,Warehouse C
+PROD-00257,Product Sports 256,Electronics,305.42,339.0,61.0,,2022-04-25,Warehouse A
+PROD-00258,Product Toys 257,Home & Garden,272.69,324.0,42.0,Supplier B,2022-09-23,Warehouse B
+PROD-00259,Product Sports 258,Toys,,,93.0,Supplier D,2022-10-30,
+PROD-00260,Product Electronics 259,Toys,183.55,828.0,68.0,Supplier D,2022-06-08,Warehouse B
+PROD-00261,Product Books 260,Clothing,355.96,952.0,100.0,Supplier C,2022-07-16,Warehouse C
+PROD-00262,Product Sports 261,Sports,336.57,116.0,81.0,Supplier C,,
+PROD-00263,Product Sports 262,Electronics,40.65,43.0,65.0,Supplier C,2022-04-30,Warehouse B
+PROD-00264,Product Clothing 263,Books,425.96,762.0,47.0,Supplier C,,
+PROD-00265,Product Electronics 264,Home & Garden,136.13,765.0,,Supplier B,2022-07-28,Warehouse A
+PROD-00266,Product Books 265,Clothing,476.73,99.0,25.0,Supplier B,2022-10-14,Warehouse C
+PROD-00267,Product Sports 266,Electronics,366.74,281.0,46.0,Supplier D,2022-04-01,Warehouse A
+PROD-00268,Product Clothing 267,Books,217.25,385.0,52.0,Supplier D,2022-05-06,
+PROD-00269,Product Home & Garden 268,Home & Garden,44.15,372.0,62.0,Supplier A,2022-09-24,
+PROD-00270,Product Books 269,Books,337.66,746.0,69.0,Supplier A,2022-02-27,Warehouse A
+PROD-00271,Product Electronics 270,Sports,452.8,789.0,,Supplier A,2022-03-10,
+PROD-00272,Product Toys 271,Sports,243.08,864.0,41.0,Supplier D,2022-09-23,Warehouse A
+PROD-00273,Product Clothing 272,Home & Garden,487.28,801.0,81.0,,,Warehouse A
+PROD-00274,Product Clothing 273,Electronics,219.1,772.0,50.0,Supplier B,2022-12-15,Warehouse C
+PROD-00275,Product Toys 274,Home & Garden,412.62,668.0,92.0,Supplier B,2022-02-04,Warehouse A
+PROD-00276,Product Clothing 275,Toys,,707.0,,Supplier D,2022-03-28,Warehouse C
+PROD-00277,Product Books 276,Books,,240.0,74.0,Supplier A,2022-01-12,
+PROD-00278,Product Home & Garden 277,Clothing,222.5,491.0,49.0,Supplier D,2022-01-04,Warehouse C
+PROD-00279,Product Electronics 278,Electronics,340.97,553.0,13.0,Supplier A,2022-07-05,Warehouse A
+PROD-00280,Product Clothing 279,Clothing,46.48,135.0,34.0,Supplier B,2022-09-29,Warehouse B
+PROD-00281,Product Clothing 280,Electronics,,791.0,40.0,Supplier D,,Warehouse B
+PROD-00282,Product Home & Garden 281,Books,170.58,106.0,61.0,,2022-12-14,
+PROD-00283,Product Toys 282,Electronics,,753.0,21.0,,2022-02-06,
+PROD-00284,Product Books 283,Home & Garden,449.91,398.0,85.0,Supplier B,2022-02-27,Warehouse C
+PROD-00285,Product Sports 284,Sports,,72.0,91.0,,,Warehouse A
+PROD-00286,Product Electronics 285,Clothing,192.43,214.0,20.0,Supplier B,2022-05-28,
+PROD-00287,Product Home & Garden 286,Books,157.29,303.0,,Supplier D,2022-04-02,Warehouse C
+PROD-00288,Product Sports 287,Books,253.33,,18.0,Supplier C,2022-09-01,Warehouse C
+PROD-00289,Product Books 288,Electronics,424.94,741.0,52.0,Supplier B,2022-08-21,
+PROD-00290,Product Sports 289,Home & Garden,175.6,965.0,14.0,Supplier A,2022-10-25,
+PROD-00291,Product Home & Garden 290,Home & Garden,355.99,953.0,66.0,Supplier C,2022-06-13,Warehouse A
+PROD-00292,Product Clothing 291,Toys,7.94,179.0,15.0,,2022-04-21,Warehouse B
+PROD-00293,Product Toys 292,Books,305.87,686.0,87.0,Supplier A,2022-12-13,Warehouse A
+PROD-00294,Product Clothing 293,Electronics,34.78,,43.0,Supplier B,2022-06-25,Warehouse A
+PROD-00295,Product Books 294,Sports,422.95,416.0,57.0,,2022-07-07,
+PROD-00296,Product Sports 295,Clothing,108.5,428.0,76.0,Supplier B,2022-01-30,Warehouse C
+PROD-00297,Product Electronics 296,Books,297.53,157.0,29.0,Supplier A,2022-03-14,
+PROD-00298,Product Books 297,Sports,377.75,879.0,13.0,Supplier A,2022-02-15,Warehouse A
+PROD-00299,Product Electronics 298,Books,265.4,439.0,20.0,Supplier A,2022-06-17,Warehouse C
+PROD-00300,Product Electronics 299,Toys,486.89,138.0,,Supplier C,2022-02-05,Warehouse C
+PROD-00201,Product Clothing 200,Clothing,264.71,,66.0,,2022-09-14,Warehouse C
+PROD-00220,Product Clothing 219,Books,254.22,722.0,67.0,Supplier B,2022-04-04,Warehouse C
+PROD-00125,Product Sports 124,Books,12.88,172.0,44.0,Supplier C,2022-06-13,Warehouse A
+PROD-00053,Product Sports 52,Home & Garden,,769.0,91.0,Supplier A,2022-10-27,
+PROD-00035,Product Electronics 34,Clothing,388.13,670.0,51.0,Supplier D,2022-02-20,Warehouse A
+PROD-00177,Product Clothing 176,Electronics,105.84,716.0,28.0,Supplier B,,Warehouse A
+PROD-00009,Product Home & Garden 8,Electronics,344.88,867.0,92.0,Supplier D,,Warehouse C
+PROD-00004,Product Home & Garden 3,Sports,452.87,611.0,73.0,Supplier A,,
+PROD-00241,Product Sports 240,Sports,111.55,618.0,53.0,Supplier B,2022-03-12,Warehouse B
+PROD-00193,Product Clothing 192,Sports,328.59,457.0,56.0,Supplier B,2022-06-10,Warehouse A
