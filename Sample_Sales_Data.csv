@@ -1,0 +1,11 @@
+Order ID,Date,Customer ID,Customer,Region,City,Product ID,Product,Quantity,Discount,Sales,Cost,Gross Profit,Month
+O1001,2026-01-01,C013,Metro Wholesale,North,Lucknow,P007,SSD,3,0.05,18525.0,14100,4425.0,2026-01
+O1002,2026-01-01,C005,Evergreen Stores,North,Chandigarh,P007,SSD,2,0.0,13000.0,9400,3600.0,2026-01
+O1003,2026-01-01,C011,Kaveri Distributors,South,Hyderabad,P003,Keyboard,5,0.03,12125.0,8000,4125.0,2026-01
+O1004,2026-01-01,C008,Horizon Supplies,East,Bhubaneswar,P003,Keyboard,6,0.0,15000.0,9600,5400.0,2026-01
+O1005,2026-01-01,C008,Horizon Supplies,East,Bhubaneswar,P004,Mouse,6,0.0,7200.0,4200,3000.0,2026-01
+O1006,2026-01-01,C012,Lotus Retail,East,Patna,P005,Printer,1,0.0,15000.0,11000,4000.0,2026-01
+O1007,2026-01-01,C006,Future Tech,West,Pune,P005,Printer,4,0.0,60000.0,44000,16000.0,2026-01
+O1008,2026-01-02,C011,Kaveri Distributors,South,Hyderabad,P007,SSD,2,0.0,13000.0,9400,3600.0,2026-01
+O1009,2026-01-02,C012,Lotus Retail,East,Patna,P007,SSD,6,0.0,39000.0,28200,10800.0,2026-01
+O1010,2026-01-02,C014,Nova Systems,West,Surat,P003,Keyboard,4,0.0,10000.0,6400,3600.0,2026-01
