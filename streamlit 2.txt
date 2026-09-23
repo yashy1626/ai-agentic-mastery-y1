@@ -1,0 +1,19 @@
+act as an expert python developer and build a data cleaning web app using Streamlit and Pandas.
+Requirements:
+a.) user can upload csv or an excel file
+b.) show me the basic summary of dataset like no. of rows , columns using info() method.
+c.) show me the total no of missing values and duplicate records
+d.) provide the radio button options for Data cleaning like -
+    remove missing values
+	fill missing values [fillna , interpolate]
+e.) remove the duplicate records
+f.) finally provide the downloadable cleaned dataset
+g.) provide me the requirements.txt file
+h.) write clean , modular , well-commented PEP8 compliant code
+i.) include error handling for empty file upload or incorrect file formats
+	
+
+
+
+
+	

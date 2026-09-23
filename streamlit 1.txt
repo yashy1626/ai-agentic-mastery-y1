@@ -1,0 +1,22 @@
+act as a finest data engineer , whose expertise is to design streamlit applications.
+
+help me in designing the basic streamlit application.
+I would like to design a basic data analysis application which can help me in understanding the data.
+requirements are as follow :-
+a.) user can upload csv or an excel file
+b.) the application should show the basic summary like 
+  no. of rows and columns in the dataset
+  total no. of records
+  basic summary using pandas info() method
+  show the no. of missing values and duplicate records
+  show us the top 5 records
+  show us the last 5 records
+  
+keep this application simple.
+no need to clean the data.
+just help me in designing the basic data analysis application.
+
+at the end also provide me the requirements.txt file
+
+also provide the info to setup the libraries mentioned in requirements.txt file
+  

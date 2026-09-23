@@ -1,0 +1,338 @@
+## Role
+
+Act as a **senior Python developer and Streamlit application architect**. Build a production-quality **data cleaning web application** using **Streamlit** and **Pandas**.
+
+The application should have a clean, intuitive UI and follow Python best practices.
+
+## Objective
+
+Create a Streamlit web app that allows users to:
+
+1. Upload a CSV or Excel dataset.
+2. Inspect basic dataset information and data-quality statistics.
+3. Clean missing values and duplicate records through an interactive UI.
+4. Preview the cleaned dataset.
+5. Download the cleaned dataset.
+
+---
+
+## Functional Requirements
+
+### 1. File Upload
+
+Provide a `st.file_uploader()` that accepts:
+
+* `.csv`
+* `.xlsx`
+* `.xls`
+
+Requirements:
+
+* Display an appropriate message when no file has been uploaded.
+* Validate the uploaded file type.
+* Handle empty or invalid files gracefully.
+* Display a user-friendly error message instead of crashing the application.
+* Load CSV files using `pandas.read_csv()`.
+* Load Excel files using `pandas.read_excel()`.
+
+---
+
+### 2. Dataset Summary
+
+After a valid dataset is uploaded, display a summary containing:
+
+* Number of rows
+* Number of columns
+* Column names
+* Data types
+* Total missing values
+* Total duplicate records
+
+Use Pandas appropriately, including `DataFrame.info()` where useful.
+
+Because `df.info()` normally writes to stdout rather than returning a value, capture or otherwise present its output appropriately in the Streamlit interface.
+
+Present the key statistics in a clear and visually appealing format using Streamlit components such as:
+
+* `st.metric()`
+* `st.dataframe()`
+* `st.expander()`
+
+---
+
+### 3. Missing-Value Analysis
+
+Display:
+
+* Total number of missing values in the entire dataset.
+* Missing values by column.
+* Optionally show the percentage of missing values per column.
+
+Example:
+
+| Column | Missing Values | Missing % |
+| ------ | -------------: | --------: |
+| Age    |             10 |      5.0% |
+| Salary |              3 |      1.5% |
+
+---
+
+### 4. Data Cleaning Options
+
+Provide an interactive **radio button or selectbox** for choosing the cleaning operation.
+
+Options should include:
+
+#### Option A — Remove Missing Values
+
+Allow the user to remove rows containing missing values using:
+
+```python
+df.dropna()
+```
+
+Clearly indicate how many rows were removed.
+
+#### Option B — Fill Missing Values
+
+Provide sub-options for filling missing values:
+
+* Fill with a user-specified value
+* Forward fill
+* Backward fill
+* Interpolation
+
+Use appropriate Pandas methods such as:
+
+```python
+df.fillna()
+df.interpolate()
+```
+
+For numeric columns, interpolation should be handled appropriately.
+
+If a selected method is not applicable to the dataset, show a meaningful warning/error message rather than failing silently.
+
+---
+
+### 5. Duplicate Record Removal
+
+Provide an option to remove duplicate records using:
+
+```python
+df.drop_duplicates()
+```
+
+Display:
+
+* Number of duplicate rows detected before cleaning.
+* Number of duplicates removed.
+* Number of rows remaining after cleaning.
+
+Allow the user to apply duplicate removal independently or together with missing-value cleaning.
+
+---
+
+### 6. Cleaning Workflow
+
+The application should maintain a clear distinction between:
+
+* **Original dataset**
+* **Cleaned dataset**
+
+Do not repeatedly modify the original uploaded DataFrame unintentionally.
+
+A recommended workflow is:
+
+```text
+Upload Dataset
+      ↓
+Analyze Dataset
+      ↓
+Select Cleaning Operations
+      ↓
+Apply Cleaning
+      ↓
+Display Cleaning Summary
+      ↓
+Preview Cleaned Dataset
+      ↓
+Download Cleaned Dataset
+```
+
+Display a before/after summary showing:
+
+* Original row count
+* Cleaned row count
+* Rows removed
+* Original missing values
+* Remaining missing values
+* Original duplicate count
+* Remaining duplicate count
+
+---
+
+### 7. Cleaned Dataset Preview
+
+After cleaning, display the cleaned DataFrame using:
+
+```python
+st.dataframe()
+```
+
+Allow the user to inspect the resulting dataset before downloading it.
+
+---
+
+### 8. Download Cleaned Dataset
+
+Provide a download button using:
+
+```python
+st.download_button()
+```
+
+The user should be able to download the cleaned dataset as a CSV file.
+
+Use an appropriate filename such as:
+
+```text
+cleaned_<original_filename>.csv
+```
+
+Ensure the downloaded file contains the cleaned data currently displayed in the application.
+
+---
+
+## Error Handling
+
+Implement robust error handling for cases including:
+
+* No file uploaded.
+* Empty file.
+* Corrupted CSV file.
+* Invalid Excel file.
+* Unsupported file format.
+* Dataset with no rows.
+* Dataset with no columns.
+* Missing-value operation that cannot be applied.
+* Interpolation errors.
+* Unexpected Pandas exceptions.
+
+Use appropriate Streamlit feedback components:
+
+```python
+st.error()
+st.warning()
+st.info()
+st.success()
+```
+
+Do not expose raw Python stack traces to normal users.
+
+---
+
+## UI/UX Requirements
+
+Create a clean and professional Streamlit interface.
+
+Suggested structure:
+
+### Sidebar
+
+* File upload
+* Cleaning options
+* Cleaning controls
+
+### Main Area
+
+**1. Dataset Overview**
+
+* Dataset metrics
+* Data types
+* Missing-value summary
+* Duplicate summary
+
+**2. Original Dataset Preview**
+
+**3. Data Cleaning**
+
+**4. Cleaning Results**
+
+**5. Cleaned Dataset Preview**
+
+**6. Download**
+
+Use Streamlit layout components such as:
+
+```python
+st.columns()
+st.tabs()
+st.expander()
+st.sidebar
+```
+
+where appropriate.
+
+---
+
+## Code Quality Requirements
+
+Write **clean, modular, maintainable, PEP 8-compliant Python code**.
+
+Requirements:
+
+* Use functions instead of putting all logic in one block.
+* Use meaningful variable and function names.
+* Add concise comments where necessary.
+* Add Python docstrings to important functions.
+* Avoid duplicated code.
+* Separate file loading, validation, analysis, cleaning, and download logic.
+* Use appropriate type hints where practical.
+* Follow standard Python naming conventions.
+* Keep the application easy to extend with additional cleaning operations later.
+
+Suggested function structure:
+
+```python
+def load_dataset(...):
+    ...
+
+def validate_file(...):
+    ...
+
+def get_dataset_summary(...):
+    ...
+
+def get_missing_value_summary(...):
+    ...
+
+def clean_missing_values(...):
+    ...
+
+def remove_duplicates(...):
+    ...
+
+def create_cleaning_summary(...):
+    ...
+
+def convert_dataframe_to_csv(...):
+    ...
+
+def main():
+    ...
+```
+
+---
+
+## Project Structure
+
+Provide the complete project with the following structure:
+
+```text
+data-cleaning-app/
+│
+├── app.py
+├── requirements.txt
+└── README.md
+```
