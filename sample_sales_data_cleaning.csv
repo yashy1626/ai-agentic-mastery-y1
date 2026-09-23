@@ -1,0 +1,23 @@
+Order_ID,Order_Date,Customer_Name,Region,Product,Quantity,Sales_Amount,Order_Status
+1001,2026-01-05,Aarav Sharma,North,Laptop,2.0,75000.0,Completed
+1002,2026-01-07,Priya Singh,South,Monitor,3.0,18000.0,Completed
+1003,2026-01-10,Rahul Verma,West,Keyboard,5.0,2500.0,Pending
+1004,2026-01-12,Neha Gupta,East,Mouse,10.0,1200.0,Completed
+1005,2026-01-15,Vikram Patel,North,Laptop,,68000.0,Completed
+1006,2026-01-18,Ananya Mehta,South,Headphones,4.0,,Pending
+1007,2026-01-20,Rohan Das,,Webcam,6.0,4500.0,Completed
+1008,2026-01-22,Ishita Roy,West,Tablet,2.0,32000.0,
+1009,2026-01-25,Karan Malhotra,East,Printer,1.0,15000.0,Completed
+1010,2026-01-27,Meera Kapoor,North,Laptop,1.0,72000.0,Cancelled
+1011,2026-01-29,,South,Monitor,2.0,17000.0,Completed
+1012,,Arjun Nair,West,Keyboard,8.0,2200.0,Pending
+1013,2026-02-02,Sana Khan,East,Mouse,15.0,1100.0,Completed
+1014,2026-02-04,Dev Joshi,North,Headphones,,3500.0,Completed
+1015,2026-02-06,Tanya Bose,South,Tablet,3.0,30000.0,Pending
+1016,2026-02-08,Amit Shah,West,Printer,2.0,,Completed
+1017,2026-02-10,Nisha Jain,East,Webcam,4.0,4200.0,Completed
+1018,2026-02-12,Kabir Rao,,Laptop,2.0,74000.0,Pending
+1019,2026-02-15,Riya Sethi,South,Monitor,5.0,16500.0,Completed
+1020,2026-02-17,Yash Agarwal,North,Keyboard,7.0,2400.0,Completed
+1004,2026-01-12,Neha Gupta,East,Mouse,10.0,1200.0,Completed
+1013,2026-02-02,Sana Khan,East,Mouse,15.0,1100.0,Completed
